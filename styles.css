@@ -159,3 +159,102 @@ footer {
         grid-template-columns: 1fr;
     }
 } 
+
+/* Members Section */
+.members {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.members h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+/* Member Grid */
+.member-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột */
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Member Card */
+.member {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+}
+
+/* Member Image */
+.member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    .member-container {
+        grid-template-columns: 1fr; /* Chuyển về 1 cột trên màn hình nhỏ */
+    }
+}
+
+/* Trang Liên Hệ */
+
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
